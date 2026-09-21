@@ -1,5 +1,9 @@
 {
   "type": "module",
+  "scripts": {
+  "build": "vite build",
+  "start": "tsx server.ts"
+},
   "dependencies": {
     "superjson": "2.2.2",
     "@hookform/resolvers": "^4.1.3",
