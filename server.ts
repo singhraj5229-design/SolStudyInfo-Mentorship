@@ -14,7 +14,7 @@ app.get("*", async (c, next) => {
   }
   return serveStatic({ path: "./dist/index.html" })(c, next);
 });
-onst port = Number(process.env.PORT) || 3333;
+const port = Number(process.env.PORT) || 3333;
 serve({ fetch: app.fetch, port });
-console.log(Running on port ${port});
+console.log(`Running on port ${port}`);
       
