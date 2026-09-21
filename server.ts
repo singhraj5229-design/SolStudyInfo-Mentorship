@@ -5,7 +5,6 @@ import { serve } from '@hono/node-server';
 
 const app = new Hono();
 
-app.use("/*", serveStatic({ root: "./static" }));
 app.use('/*', serveStatic({ root: './dist' }))
 app.get("*", async (c, next) => {
   const p = c.req.path;
